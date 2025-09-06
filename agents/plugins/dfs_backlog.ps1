@@ -14,7 +14,7 @@ The script then uses this information along with MicrosoftDFS WMI methods to cal
  
 All of this information is returned in an array custom objects, that can be later processed as needed. 
  
-The computername defaults to "localhost", or may be passed to the –computerName parameter. 
+The computername defaults to "localhost", or may be passed to the â€“computerName parameter. 
  
 The parameters -RGName and -RFName may also be used to filter either or both results, but currently each parameter only accepts one single value. 
  
@@ -224,9 +224,7 @@ Function Get-DFSRBacklogInfo ($Computer, $RGroups, $RFolders, $RConnections)
 						If ($BacklogCount -ne $Null)
 						{
                         Write-Host -NoNewline $ReplicatedFolderName `($Smem`)";"$BacklogCount`n
-						}
-						else {
-						Write-Host -NoNewline $ReplicatedFolderName `($Smem`)";NULL"`n
+						Write-Host -NoNewline $ReplicatedFolderName `( "to"$Rmem`)";"$BacklogCount`n
 						}
 						$obj = New-Object psobject 
                         $obj | Add-Member noteproperty ReplicationGroupName $ReplicationGroupName 
@@ -314,3 +312,4 @@ If ($Pingable)
 } else { 
     #Write-Error "The computer '$computer' did not respond to ping." 
 }
+
