@@ -2,7 +2,7 @@
 
 ![build](https://github.com/7meis/checkmk_dfs_backlog/workflows/build/badge.svg)
 ![flake8](https://github.com/7meis/checkmk_dfs_backlog/workflows/Lint/badge.svg)
-[![pytest](https://github.com/7meis/checkmk_dfs_backlog/actions/workflows/pytest.yml/badge.svg)](https://github.com/7meis/checkmk_dfs_backlog/actions/workflows/pytest.yml)
+[![pytest](https://github.com/7meis/checkmk_dfs_backlog/workflows/pytest/badge.svg)
 
 ## Description
 
