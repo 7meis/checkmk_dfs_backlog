@@ -1,8 +1,8 @@
 # Checkmk Extension For DFSR Backlog Check
 
-![build](https://github.com/ellr/checkmk_dfs_backlog/workflows/build/badge.svg)
-![flake8](https://github.com/ellr/checkmk_dfs_backlog/workflows/Lint/badge.svg)
-![pytest](https://github.com/ellr/checkmk_dfs_backlog/workflows/pytest/badge.svg)
+![build](https://github.com/7meis/checkmk_dfs_backlog/workflows/build/badge.svg)
+![flake8](https://github.com/7meis/checkmk_dfs_backlog/workflows/Lint/badge.svg)
+[![pytest](https://github.com/7meis/checkmk_dfs_backlog/actions/workflows/pytest.yml/badge.svg)](https://github.com/7meis/checkmk_dfs_backlog/actions/workflows/pytest.yml)
 
 ## Description
 
