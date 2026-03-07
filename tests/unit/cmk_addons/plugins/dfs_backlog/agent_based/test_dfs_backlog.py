@@ -16,8 +16,8 @@ from typing import Tuple, List
 
 import pytest
 
-from cmk.base.plugins.agent_based.agent_based_api.v1 import Result, State, Metric
-from cmk.base.plugins.agent_based.dfs_backlog import (
+from cmk.agent_based.v2 import Result, State, Metric
+from cmk_addons.plugins.dfs_backlog.agent_based.dfs_backlog import (
     parse_dfs_backlog,
     check_dfs_backlog,
     DfsReplication,

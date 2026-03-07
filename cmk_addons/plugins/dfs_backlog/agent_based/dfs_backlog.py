@@ -25,12 +25,11 @@ from __future__ import annotations
 from enum import Enum, unique
 from typing import List, NamedTuple, Tuple
 
-from .agent_based_api.v1.type_defs import (
+from cmk.agent_based.v2 import (
+    AgentSection,
+    CheckPlugin,
     CheckResult,
     DiscoveryResult,
-)
-from .agent_based_api.v1 import (
-    register,
     Metric,
     Result,
     Service,
@@ -109,7 +108,7 @@ def parse_dfs_backlog(string_table) -> List[DfsReplication]:
     return [DfsReplication.from_string_table(line) for line in string_table]
 
 
-register.agent_section(
+agent_section_dfs_backlog = AgentSection(
     name=CHECK_NAME,
     parse_function=parse_dfs_backlog,
 )
@@ -137,7 +136,7 @@ def check_dfs_backlog(item: str, section: List[DfsReplication]) -> CheckResult:
         yield Result(state=State.UNKNOWN, summary='item not found')
 
 
-register.check_plugin(
+check_plugin_dfs_backlog = CheckPlugin(
     name=CHECK_NAME,
     service_name='DFS Backlog: %s',
     discovery_function=discover_dfs_backlog,
