@@ -6,9 +6,10 @@
             'cmk_addons_plugins': [
                 'dfs_backlog/agent_based/dfs_backlog.py',
                 'dfs_backlog/rulesets/dfs_backlog_cee.py',
-            ]
-        'lib': ['python3/cmk/base/cee/plugins/bakery/deploy_dfs_backlog.py',
-            'python3/cmk/base/plugins/agent_based/dfs_backlog.py',
+            ],
+            'lib': [
+                'python3/cmk/base/cee/plugins/bakery/deploy_dfs_backlog.py',
+                'python3/cmk/base/plugins/agent_based/dfs_backlog.py',
         ]
     },
     'name': 'dfs_backlog',
