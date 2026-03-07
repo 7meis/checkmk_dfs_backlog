@@ -9,7 +9,7 @@
             ],
             'lib': [
                 'python3/cmk/base/cee/plugins/bakery/deploy_dfs_backlog.py',
-                'python3/cmk/base/plugins/agent_based/dfs_backlog.py',
+                'python3/cmk/base/plugins/agent_based/dfs_backlog.ps1',
         ]
     },
     'name': 'dfs_backlog',
