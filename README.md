@@ -1,8 +1,8 @@
 # Checkmk Extension For DFSR Backlog Check
 
-![build](https://github.com/7meis/checkmk_dfs_backlog/workflows/build/badge.svg)
-![flake8](https://github.com/7meis/checkmk_dfs_backlog/workflows/Lint/badge.svg)
-[![pytest](https://github.com/7meis/checkmk_dfs_backlog/workflows/pytest/badge.svg)
+![build](https://github.com/WagnerAG/checkmk_dfs_backlog/workflows/build/badge.svg)
+![flake8](https://github.com/WagnerAG/checkmk_dfs_backlog/workflows/Lint/badge.svg)
+[![pytest](https://github.com/WagnerAG/checkmk_dfs_backlog/workflows/pytest/badge.svg)
 
 ## Description
 
@@ -38,4 +38,4 @@ To build the package hit `Crtl`+`Shift`+`B` to execute the build task in VSCode.
 
 ### Github Workflow
 
-The provided Github Workflows run `pytest` and `flake8` in the same checkmk docker container as vscode.
+The provided Github Workflows run `pytest` and `ruff` in the same checkmk docker container as vscode.
